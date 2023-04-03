@@ -1,0 +1,180 @@
+/* Fonts from google*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+/* Root styles */
+:root{
+    /* primary colors */
+    --Dark-cyan: hsl(158, 36%, 37%); 
+    --Cream: hsl(30, 38%, 92%);
+
+     /* Neutral Colors  */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    /* font styles */
+    font-family: Montserrat, sans-serif, serif, arial;
+    font-size: 14px;   
+}
+body {
+    display: flex;
+    /* margin: 0 auto; */
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 18px 0 0 0; */
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Cream);
+}
+
+p {
+    margin: 0;
+}
+/* Mobile first styles */
+main {
+    /* margin-top: 50%; */
+    width: 365px;
+    margin: 0 auto;
+    background-color: var(--White);
+    border-radius: 15px;
+    /* height: 40%; */
+    /* outline: 2px solid green; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+.image img {
+    max-width: 365px;
+    border-radius: 15px 15px 0 0;
+    /* display: flex; */
+}
+
+.desktop {
+    display: none;
+}
+
+.info {
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding: 20px;
+    /* width: 100%; */
+}
+
+.info h1 {
+    font-family: "Fraunces";
+    font-size: 34px;
+    margin: 0;
+    padding: 6px 0 10px 0;
+    line-height: 01;
+    
+}
+
+.info p {
+    color: var(--Dark-grayish-blue);
+    line-height: 25px;
+    margin-bottom: 0px ;
+    padding: 5px 0 0 0;
+}
+
+.image {
+    /* background: url(./images/image-product-mobile.jpg); */
+}
+
+.item-hdr {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    /* font-family: Fraunces; */
+    color: var(--Dark-grayish-blue);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    max-height: 80px;
+    /* justify-content: space-between; */
+}
+
+section h2 {
+    font-family: "Fraunces";
+    font-size: 36px;
+    color: var(--Dark-cyan);
+}
+
+section p {
+    text-decoration: line-through;
+    margin-left: 18px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    color: var(--White);
+    padding: 18px 15px;
+    font-weight: 600;
+    /* width: 100%; */
+    background-color: var(--Dark-cyan);
+    border-radius: 10px;
+    font-family: "Montserrat";
+}
+
+.btn img {
+    margin-right: 8px;
+}
+
+/* Desktop Files */
+@media (min-width: 1440px) {
+
+    body {
+            display: flex;
+            /* margin: 0 auto; */
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+    
+        p {
+            margin: 0;
+        }
+
+        .desktop {
+            display: block;
+        }
+
+        .mobile {
+            display: none;
+        }
+    
+        /* Mobile first styles */
+        main {
+            /* margin-top: 50%; */
+            width: 750px;
+            margin: auto;
+            background-color: var(--White);
+            border-radius: 15px;
+            /* height: 40%; */
+            /* outline: 2px solid green; */
+            display: flex;
+            /* flex-direction: column; */
+            align-content: center;
+        }
+
+        .info {
+            margin:  25px auto;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 0 5px;
+            /* align-items: center; */
+        }
+    
+        .image img {
+            border-radius: 15px 0 0 15px;
+            /* display: flex; */
+        }
+}
